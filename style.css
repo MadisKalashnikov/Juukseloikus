@@ -3,6 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: url(/fonts/Poppins-Regular.ttf) format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   font-style: normal;
   font-weight: 600;
   src: url(/fonts/Poppins-SemiBold.ttf) format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   font-style: normal;
   font-weight: 700;
   src: url(/fonts/Poppins-Bold.ttf) format('woff2');
+  font-display: swap;
 }
 html {
     scroll-behavior: smooth;
@@ -61,6 +64,7 @@ nav {
 
 .logo-img {
     height: 60px;
+    width: 60px;
 }
 
 .title {
