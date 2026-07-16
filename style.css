@@ -56,6 +56,7 @@ nav {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 30px;
     list-style: none;
 }
@@ -64,6 +65,24 @@ nav {
     text-decoration: none;
     color: #444;
     font-weight: 500;
+}
+.nav-links a:hover {
+    color: #c49a6c;
+}
+.booking-btn {
+    
+    background: #c9a477;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.booking-btn:hover {
+    transition: .3s ease;
+    background: #b08a5c;
+    color: white !important;
 }
 
 
@@ -141,7 +160,6 @@ nav {
     font-size: 15px;
 }
 
-
 .btn {
     background: #c49a6c;
     color: white;
@@ -149,6 +167,11 @@ nav {
     border-radius: 40px;
     text-decoration: none;
     font-weight: 600;
+}
+.btn:hover {
+    background: #b08a5c;
+    scale: 1.05;
+    transition: .3s ease;
 }
 
 
@@ -323,15 +346,6 @@ footer {
         margin: -40px 20px 0;
         padding: 25px;
         grid-template-columns: 1fr;
-    }
-
-   .info-dot {
-    width: 10px;
-    height: 10px;
-    background: #c49a6c;
-    border-radius: 50%;
-    display: block;
-    flex-shrink: 0;
     }
 
     .info-card {
