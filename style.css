@@ -108,7 +108,7 @@ nav {
 
 .hero {
     height: 100vh;
-    background: url("./media/herobackground.jpg") center/cover;
+    background: url("./media/herobackground.webp") center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
