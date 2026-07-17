@@ -59,9 +59,9 @@ links.forEach(link => {
 });
 
 backToTop.addEventListener("click", (e) => {
-    e.preventDefault
-    backToTop.classList.remove("show");
+    e.preventDefault()
     scrollToTop();
+    backToTop.classList.remove("show");
 });
 
 
