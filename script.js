@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-function scorllToElement(element) {
+function scrollToElement(element) {
     const elementTop = element.offsetTop;
     const offset = 45; // Offset in pixels
     window.scrollTo({
@@ -49,7 +49,7 @@ links.forEach(link => {
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            scroll_to_element(targetElement);
+            scrollToElement(targetElement);
         }
     });
 });
