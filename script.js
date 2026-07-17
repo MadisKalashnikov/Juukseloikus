@@ -58,7 +58,8 @@ links.forEach(link => {
     });
 });
 
-backToTop.addEventListener("click", () => {
+backToTop.addEventListener("click", (e) => {
+    e.preventDefault
     backToTop.classList.remove("show");
     scrollToTop();
 });
