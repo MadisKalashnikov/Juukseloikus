@@ -2,7 +2,7 @@ const menuButton = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".nav-links");
 const backToTop = document.querySelector(".back-to-top");
 const hero = document.querySelector(".hero");
-const links = document.querySelectorAll(".nav-links a");
+const links = document.querySelectorAll(".nav-links a, .nav-links button");
 const logoLinks = document.querySelectorAll(".logo-container a");
 
 window.addEventListener("scroll", () => {
@@ -45,6 +45,10 @@ logoLinks.forEach(link => {
 links.forEach(link => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
+        if (link.nodeName === "BUTTON") {
+            window.open(link.getAttribute("href"), "_blank", "noopener noreferrer");
+            return;
+        }
         const targetId = link.getAttribute("href").substring(1);
         const targetElement = document.getElementById(targetId);
 

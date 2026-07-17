@@ -107,6 +107,7 @@ nav {
     transition: .3s ease;
     background: #b08a5c;
     color: white !important;
+    cursor: pointer;
 }
 
 
