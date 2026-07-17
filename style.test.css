@@ -94,7 +94,7 @@ nav {
     color: #c49a6c;
 }
 .booking-btn {
-    
+    border: none;
     background: #614a30;
     color: #fff !important;
     padding: 12px 30px;
@@ -387,4 +387,67 @@ footer {
         bottom: 15px;
         font-size: 18px;
     }
+     .error-card {
+        padding: 45px 25px;
+    }
+
+    .error-card h2 {
+        font-size: 28px;
+    }
+
+    .error-buttons {
+        flex-direction: column;
+    }
+
+    .error-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 20px 60px;
+}
+
+.error-card {
+    max-width: 650px;
+    width: 100%;
+    background: white;
+    border-radius: 18px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+}
+
+.error-card h1 {
+    font-size: clamp(90px, 15vw, 160px);
+    color: #c49a6c;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.error-card h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+.error-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.error-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.error-buttons .booking-btn,
+.error-buttons .btn {
+    display: inline-block;
 }
