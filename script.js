@@ -3,6 +3,7 @@ const menu = document.querySelector(".nav-links");
 const backToTop = document.querySelector(".back-to-top");
 const hero = document.querySelector(".hero");
 const links = document.querySelectorAll(".nav-links a");
+const logoLinks = document.querySelectorAll(".logo-container a");
 
 window.addEventListener("scroll", () => {
     const heroBottom = hero.offsetHeight;
@@ -14,6 +15,33 @@ window.addEventListener("scroll", () => {
     }
 });
 
+function scorllToElement(element) {
+    const elementTop = element.offsetTop;
+    const offset = 45; // Offset in pixels
+    window.scrollTo({
+        top: elementTop - offset,
+        behavior: "smooth"
+    });
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+logoLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            scrollToTop();
+        }
+    });
+});
+
 links.forEach(link => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
@@ -21,20 +49,14 @@ links.forEach(link => {
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 45,
-                behavior: "smooth"
-            });
+            scroll_to_element(targetElement);
         }
     });
 });
 
 backToTop.addEventListener("click", () => {
     backToTop.classList.remove("show");
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    scrollToTop();
 });
 
 
