@@ -74,10 +74,6 @@ nav {
     text-decoration: none;
 }
 
-.title:hover {
-    color: #c49a6c;
-}
-
 .nav-links {
     display: flex;
     align-items: center;
@@ -90,9 +86,6 @@ nav {
     color: #444;
     font-weight: 500;
 }
-.nav-links a:hover {
-    color: #c49a6c;
-}
 .booking-btn {
     border: none;
     background: #614a30;
@@ -102,14 +95,6 @@ nav {
     text-decoration: none;
     font-weight: 600;
 }
-
-.booking-btn:hover {
-    transition: .3s ease;
-    background: #b08a5c;
-    color: white !important;
-    cursor: pointer;
-}
-
 
 .hero {
     height: 100vh;
@@ -165,11 +150,6 @@ nav {
     transition: .3s ease;
 }
 
-.info-card:hover {
-    background: #faf5ef;
-    transform: translateY(-5px);
-}
-
 .info-card span {
     font-size: 35px;
 }
@@ -193,12 +173,6 @@ nav {
     text-decoration: none;
     font-weight: 600;
 }
-.btn:hover {
-    background: #b08a5c;
-    scale: 1.05;
-    transition: .3s ease;
-}
-
 
 section {
     max-width: 1200px;
@@ -231,10 +205,6 @@ h2 {
     height: 220px;
     object-fit: cover;
     transition: .3s;
-}
-
-.card:hover img {
-    transform: scale(1.05);
 }
 
 .card h3 {
@@ -322,13 +292,6 @@ footer {
     transform: translateY(0) scale(1);
 }
 
-.back-to-top:hover {
-    opacity: 1;
-    transform: translateY(-5px) scale(1.05);
-    cursor: pointer;
-}
-
-
 @media(max-width:768px) {
 
     .menu-toggle {
@@ -402,6 +365,40 @@ footer {
     .error-buttons a {
         width: 100%;
         text-align: center;
+    }
+}
+@media (hover: hover) and (pointer: fine) {
+    .title:hover {
+        color: #c49a6c;
+    }
+
+    .nav-links a:hover {
+        color: #c49a6c;
+    }
+
+    .booking-btn:hover {
+        background: #b08a5c;
+        cursor: pointer;
+    }
+
+    .info-card:hover {
+        background: #faf5ef;
+        transform: translateY(-5px);
+    }
+
+    .btn:hover {
+        background: #b08a5c;
+        transform: scale(1.05);
+    }
+
+    .card:hover img {
+        transform: scale(1.05);
+    }
+
+    .back-to-top:hover {
+        opacity: 1;
+        transform: translateY(-5px) scale(1.05);
+        cursor: pointer;
     }
 }
 .error-page {
